@@ -1,27 +1,36 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Container, Card, Image } from 'react-bootstrap';
+import { Jumbotron as Jumbo, Container, Image } from 'react-bootstrap';
 import styled from 'styled-components';
-import moneyImage from '../assets/money.jpeg'
+import moneyImage from '../assets/money.jpeg' //note this a dog - change this to your headshot
 import colorArt from '../assets/color.png'
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
-import CV from '../assets/Armaan_Chandra_CV.pdf';
 
 const Styles = styled.div`
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        background: url(${colorArt});
+        background-size: cover;
+    }
+    
     .jumbo {
-        background: url(${colorArt}) no-repeat fixed bottom;
+        background: url(${colorArt});
         background-size: cover;
         text-shadow: black 0.1em 0.1em 0.1em;
         color: #efefef;
-        height: 200px;
+        height: 140px;
         position: relative;
-        display: flex;
-
     }
-    .card {
+    .profilePicture {
         background: url(${moneyImage}) no-repeat;
         background-position: left top;
-        width: 250px; /*width of your image*/
-        height: 200px;
+        width: 210px; /*width of your image*/
+        height: 170px;
         position: absolute;
         left: 0;
         top: 0; 
@@ -31,15 +40,15 @@ const Styles = styled.div`
         font-size: 5em;
     }
 
-    .container1 {
+    .blurb {
         width: 33%; /*width of your image*/
         height: 200px;
         position: absolute;
-        left: 250px;
-        top: 0; 
+        left: 210px;
+        top: 3px; 
     }
 
-    .container2 {
+    .links {
         right:0;
         width: 10%; /*width of your image*/
         height: 200px;
@@ -53,19 +62,26 @@ const Styles = styled.div`
         line-height:200%
     }
 
+    .signature{
+        margin-right: 600px;
+        background-color: f9f5f5;
+        bottom: 0;
+        margin:0 auto;
+        margin-top:0 auto;
+
+      }
 `;
 
 export const Jumbotron = () => (
-
-
     <Styles>
-        <Jumbo fluid={true} className="jumbo">
-            <Image fluid={true} className='card' roundedCircle />
-            <Container className='container1'>
+      <div class="footer">
+        <Jumbo className="jumbo">
+            <Image className='profilePicture' roundedCircle />
+            <Container className='blurb'>
                 <p>Hi, this is a quick look at the project I've done outside of
                 my studies. For more information about me, click the links or take a look my Résumé</p>
             </Container>
-            <Container className='container2'>
+            <Container className='links'>
                 <ul className='list'>
                     <a target="_blank" href="https://github.com/The-Programmer-A"><i class="fa fa-3x fa-github"></i></a>
                     <li></li>
@@ -76,6 +92,7 @@ export const Jumbotron = () => (
                 </ul>
             </Container>
         </Jumbo>
+        </div>
     </Styles >
 )
 
