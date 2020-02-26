@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel, Container } from "react-bootstrap";
 import styled from "styled-components";
 
@@ -35,11 +35,24 @@ const Styles = styled.div`
   }
 `;
 
+function ControlledCarousel() {
+  const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState(null);
 
-export const Home = () => (
-  <Styles>
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+    setDirection(e.direction);
+    console.log(selectedIndex);
+  };
+
+  const selectDiv = () => {
+    //dependant on the index --> toogle on the required div
+  }
+
+  return (
+    <Styles>
     <div className='house'> 
-    <Carousel>
+    <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} data-interval="false">
       <Carousel.Item>
         <img 
           className="d-block w-100"
@@ -48,7 +61,7 @@ export const Home = () => (
           height="375"
         />
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item >
         <img
           className="d-block w-100"
           src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
@@ -72,4 +85,9 @@ export const Home = () => (
     </Container>
     </div>
   </Styles>
+  );
+}
+
+export const Home = () => (
+  ControlledCarousel()
 );
