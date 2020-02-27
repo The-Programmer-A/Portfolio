@@ -1,28 +1,37 @@
 import React, { useState } from "react";
 import { Carousel, Container } from "react-bootstrap";
 import styled from "styled-components";
+import { Jumbotron } from "./components/Jumbotron";
 
 const Styles = styled.div`
 
   .house {
     display: flex;
   }
+
+  .carouselContainer {
+    width: 9px; /* you could actually just change it to 0px */
+    margin-left: -120px;
+  }
+
+  .textContainer {
+    position: relative;
+    left: 830px;
+    width: 50%;
+  }
+
   .carousel {
     margin-top: 25px;
-    margin-bottom: 30px;
-    width: 530px;
-    height: 375px;
-
+    margin-bottom: 10px;
+    width: 830px;
   }
   .carousel-inner {
-    width: 530px;
+    width: 830px;
   }
 
   .carousel-indicators  {
     align-items: bottom;
     position: absolute;
-    top: 370;
-    left: 0;
   }
 
   .textBox  {
@@ -56,22 +65,22 @@ function ControlledCarousel() {
 
     console.log('This is the index from the selected div ' + i)
 
-    var toggle = function(x){
-        x.style.display = "none";
+    var toggle = function (x) {
+      x.style.display = "none";
     };
 
-    var reset_T = function(x){
+    var reset_T = function (x) {
       if (x.style.display === "none") {
         x.style.display = "block";
       }
     }
 
 
-    if(i === 0){
+    if (i === 0) {
       //turn on textBox1, turn off textBox2 & 3
       var x = document.getElementById('container1')
       var y = document.getElementById('container2')
-      var z  = document.getElementById('container3')
+      var z = document.getElementById('container3')
       reset_T(x);
       reset_T(y);
       reset_T(z);
@@ -80,11 +89,11 @@ function ControlledCarousel() {
 
     }
 
-    if (i === 1){
+    if (i === 1) {
       //turn on textBox2, turn off textBox1 & 3
       var x = document.getElementById('container1')
       var y = document.getElementById('container2')
-      var z  = document.getElementById('container3')
+      var z = document.getElementById('container3')
       toggle(y);
       reset_T(x);
       reset_T(y);
@@ -93,11 +102,11 @@ function ControlledCarousel() {
       toggle(z);
 
     }
-    if(i === 2){
+    if (i === 2) {
       //turn on textBox3, turn off textBox1 & 2
       var x = document.getElementById('container1')
       var y = document.getElementById('container2')
-      var z  = document.getElementById('container3')
+      var z = document.getElementById('container3')
       reset_T(x);
       reset_T(y);
       reset_T(z);
@@ -110,46 +119,51 @@ function ControlledCarousel() {
   return (
     <Styles>
       <div className='house'>
-        <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} data-interval="false">
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://cdn.pixabay.com/photo/2017/08/30/07/56/money-2696228_960_720.jpg"
-              alt="First slide"
-              height="375"
-            />
-          </Carousel.Item>
-          <Carousel.Item >
-            <img
-              className="d-block w-100"
-              src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
-              alt="Third slide"
-              height="375"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
-              alt="Third slide"
-              height="375"
-            />
-          </Carousel.Item>
-        </Carousel>
-        <Container>
-          <h3 className='projectTitle'> My Budgeting Application </h3>
+        <div className='carouselContainer'>
+          <Carousel activeIndex={index} direction={direction} onSelect={handleSelect} data-interval="false">
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://cdn.pixabay.com/photo/2017/08/30/07/56/money-2696228_960_720.jpg"
+                alt="First slide"
+                height='600'
+              />
+            </Carousel.Item>
+            <Carousel.Item >
+              <img
+                className="d-block w-100"
+                src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
+                alt="Third slide"
+                height='600'
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
+                alt="Third slide"
+                height='600'
+              />
+            </Carousel.Item>
+          </Carousel>
+        </div>
+        <div className="textContainer">
+          <Container>
+            <h3 className='projectTitle'> My Budgeting Application </h3>
             <br></br>
-          <Container id='container1' >
-            <p className='textBox'> this is the 1 </p>
+            <Container id='container1' >
+              <p className='textBox'> this is the 1 </p>
+            </Container>
+            <Container id='container2' className='toggle_container'>
+              <p className='textBox'> this is the 2 </p>
+            </Container>
+            <Container id='container3' className='toggle_container'>
+              <p className='textBox'> this is the 3 </p>
+            </Container>
           </Container>
-          <Container id='container2' className='toggle_container'>
-            <p className='textBox'> this is the 2 </p>
-          </Container>
-            <Container  id='container3' className='toggle_container'>
-            <p className='textBox'> this is the 3 </p>
-          </Container>
-        </Container>
+        </div>
       </div>
+      <Jumbotron />
     </Styles>
   );
 }

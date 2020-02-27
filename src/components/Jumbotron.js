@@ -75,7 +75,7 @@ const Styles = styled.div`
 export const Jumbotron = () => (
     <Styles>
       <div class="footer">
-        <Jumbo className="jumbo">
+        <Jumbo fluid={true} className="jumbo">
             <Image className='profilePicture' roundedCircle />
             <Container className='blurb'>
                 <p>Hi, this is a quick look at the project I've done outside of

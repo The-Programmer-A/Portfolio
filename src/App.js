@@ -7,7 +7,7 @@ import { MyFitnessTracker } from "./MyFitnessTracker";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./components/Layout";
 import { NavigationBar } from "./components/NavigationBar";
-import { Jumbotron } from "./components/Jumbotron";
+
 
 function App() {
   return (
@@ -24,7 +24,6 @@ function App() {
             </Switch>
           </Router>
         </Layout>
-        <Jumbotron />
       </React.Fragment>
   );
 }
