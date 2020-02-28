@@ -23,10 +23,14 @@ const Styles = styled.div`
   .carousel {
     margin-top: 25px;
     margin-bottom: 10px;
-    width: 830px;
+    width: 730px;
   }
   .carousel-inner {
-    width: 830px;
+    width: 730px;
+  }
+
+  .'d-block w-100' {
+   
   }
 
   .carousel-indicators  {
@@ -126,7 +130,6 @@ function ControlledCarousel() {
                 className="d-block w-100"
                 src="https://cdn.pixabay.com/photo/2017/08/30/07/56/money-2696228_960_720.jpg"
                 alt="First slide"
-                height='600'
               />
             </Carousel.Item>
             <Carousel.Item >
@@ -134,7 +137,6 @@ function ControlledCarousel() {
                 className="d-block w-100"
                 src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
                 alt="Third slide"
-                height='600'
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -142,7 +144,6 @@ function ControlledCarousel() {
                 className="d-block w-100"
                 src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
                 alt="Third slide"
-                height='600'
               />
             </Carousel.Item>
           </Carousel>
@@ -163,7 +164,6 @@ function ControlledCarousel() {
           </Container>
         </div>
       </div>
-      <Jumbotron />
     </Styles>
   );
 }

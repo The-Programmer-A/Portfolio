@@ -7,30 +7,33 @@ import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 const Styles = styled.div`
 
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        color: white;
-        text-align: center;
-        background: url(${colorArt});
-        background-size: cover;
-    }
+    // .footer {
+    //     position: fixed;
+        
+    //     color: white;
+    //     text-align: center;
+    //     background: url(${colorArt});
+    //     background-size: cover;
+    // }
     
     .jumbo {
         background: url(${colorArt});
         background-size: cover;
         text-shadow: black 0.1em 0.1em 0.1em;
         color: #efefef;
-        height: 140px;
-        position: relative;
+        height: 200px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     .profilePicture {
         background: url(${moneyImage}) no-repeat;
         background-position: left top;
         width: 210px; /*width of your image*/
-        height: 170px;
+        height: 200px;
         position: absolute;
         left: 0;
         top: 0; 
@@ -74,7 +77,7 @@ const Styles = styled.div`
 
 export const Jumbotron = () => (
     <Styles>
-      <div class="footer">
+      {/* <div class="footer"> */}
         <Jumbo fluid={true} className="jumbo">
             <Image className='profilePicture' roundedCircle />
             <Container className='blurb'>
@@ -92,7 +95,7 @@ export const Jumbotron = () => (
                 </ul>
             </Container>
         </Jumbo>
-        </div>
+        {/* </div> */}
     </Styles >
 )
 

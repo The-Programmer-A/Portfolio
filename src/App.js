@@ -7,11 +7,22 @@ import { MyFitnessTracker } from "./MyFitnessTracker";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./components/Layout";
 import { NavigationBar } from "./components/NavigationBar";
+import styled from 'styled-components';
+import { Jumbotron } from "./components/Jumbotron";
+
+const Styles = styled.div`
+  .topContainer{
+    max-width:100%;
+    max-height:100%;
+  }
+`;
+
 
 
 function App() {
   return (
-      <React.Fragment>
+    <Styles>
+      <div className='topContainer'>
         <NavigationBar />
         <Layout>
           <Router>
@@ -24,7 +35,9 @@ function App() {
             </Switch>
           </Router>
         </Layout>
-      </React.Fragment>
+        <Jumbotron />
+      </div>
+    </Styles>
   );
 }
 
