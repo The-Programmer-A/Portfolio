@@ -11,19 +11,19 @@ const Styles = styled.div`
 
   .carouselContainer {
     width: 9px; /* you could actually just change it to 0px */
-    margin-left: -120px;
+    // margin-left: -120px;
   }
 
   .textContainer {
     position: relative;
-    left: 78%;
-    width: 50%;
+    left: 75%;
+    width: 40%;
   }
 
   .carousel {
     margin-top: 25px;
     margin-bottom: 10px;
-    width: 10000%;
+    width: 9500%;
   }
 
   .carousel-indicators  {

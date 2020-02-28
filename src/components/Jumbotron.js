@@ -22,7 +22,7 @@ const Styles = styled.div`
         text-shadow: black 0.1em 0.1em 0.1em;
         color: #efefef;
         height: 200px;
-        position: relative;
+        position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
