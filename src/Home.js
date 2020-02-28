@@ -16,21 +16,14 @@ const Styles = styled.div`
 
   .textContainer {
     position: relative;
-    left: 830px;
+    left: 78%;
     width: 50%;
   }
 
   .carousel {
     margin-top: 25px;
     margin-bottom: 10px;
-    width: 730px;
-  }
-  .carousel-inner {
-    width: 730px;
-  }
-
-  .'d-block w-100' {
-   
+    width: 10000%;
   }
 
   .carousel-indicators  {
@@ -137,6 +130,7 @@ function ControlledCarousel() {
                 className="d-block w-100"
                 src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
                 alt="Third slide"
+                height="50%"
               />
             </Carousel.Item>
             <Carousel.Item>

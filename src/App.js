@@ -35,8 +35,8 @@ function App() {
             </Switch>
           </Router>
         </Layout>
-        <Jumbotron />
       </div>
+      <Jumbotron />
     </Styles>
   );
 }
