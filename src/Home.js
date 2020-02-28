@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Carousel, Container } from "react-bootstrap";
+import { Carousel, Container, Card } from "react-bootstrap";
+import { Jumbotron } from 'react-bootstrap';
 import styled from "styled-components";
-import { Jumbotron } from "./components/Jumbotron";
 
 const Styles = styled.div`
 
@@ -10,8 +10,21 @@ const Styles = styled.div`
   }
 
   .carouselContainer {
-    width: 9px; /* you could actually just change it to 0px */
+    width: 10px; /* you could actually just change it to 0px */
     margin-left: -100px;
+  }
+
+  .card {
+    margin-left: -40px;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+  }
+
+  .card-text {
+    width: 95%
   }
 
   .textContainer {
@@ -23,7 +36,7 @@ const Styles = styled.div`
   .carousel {
     margin-top: 25px;
     margin-bottom: 10px;
-    width: 9500%;
+    width: 8500%;
   }
 
   .carousel-indicators  {
@@ -43,6 +56,19 @@ const Styles = styled.div`
     margin-top: 25px;
     text-align: center;
   }
+
+  .links {
+    right:0;
+    width: 10%; /*width of your image*/
+    position: absolute;
+    top: 0; 
+}  
+
+.list {
+    list-style-type: none;
+    margin-top: 5px;
+    line-height: 10px
+}
 `;
 
 function ControlledCarousel() {
@@ -147,17 +173,37 @@ function ControlledCarousel() {
             <h3 className='projectTitle'> My Budgeting Application </h3>
             <br></br>
             <Container id='container1' >
-              <p className='textBox'> this is the 1 </p>
+              <p className='textBox'> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
             </Container>
             <Container id='container2' className='toggle_container'>
-              <p className='textBox'> this is the 2 </p>
+              <p className='textBox'> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsusalkdjfa;slkdjumour and the like). </p>
             </Container>
             <Container id='container3' className='toggle_container'>
-              <p className='textBox'> this is the 3 </p>
+              <p className='textBox'> It is a long established fact that a reader will be distracted bfdjslfjkg lskdjf lgkem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
             </Container>
           </Container>
         </div>
       </div>
+      <Card>
+        <Card.Body>
+          <Card.Title>My Projects</Card.Title>
+          <Card.Text>
+                Hi, this is a quick look at the project I've done outside of
+                my studies. These projects were undertaken in efforts to learn different skills and lanaguages that are not offered by the University ciriculum.
+                For more information about me, click the links or take a look my Résumé!
+          </Card.Text>
+          <Container className='links'>
+          <ul className='list'>
+            <a target="_blank" href="https://github.com/The-Programmer-A"><i class="fa fa-3x fa-github"></i></a>
+            <li></li>
+            <a target="_blank" href="https://www.linkedin.com/in/armaan-chandra-44227b18a/"><i class="fa fa-3x fa-linkedin"></i></a>
+            <li></li>
+            <a href="https://drive.google.com/uc?export=download&id=12S8RqkBlKtZdRQc4A2PivPU8liGpIK4i" download="Armaan_Chandra_CV"><i class="fa fa-3x fa-file"></i></a>
+            <li></li>
+          </ul>
+        </Container>
+        </Card.Body>
+      </Card>
     </Styles>
   );
 }

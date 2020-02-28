@@ -28,6 +28,7 @@ const Styles = styled.div`
         width: 100%;
         padding: 0;
         margin: 0;
+        margin-top: 20px;
     }
     .profilePicture {
         background: url(${moneyImage}) no-repeat;
@@ -81,18 +82,8 @@ export const Jumbotron = () => (
         <Jumbo fluid={true} className="jumbo">
             <Image className='profilePicture' roundedCircle />
             <Container className='blurb'>
-                <p>Hi, this is a quick look at the project I've done outside of
-                my studies. For more information about me, click the links or take a look my Résumé</p>
-            </Container>
-            <Container className='links'>
-                <ul className='list'>
-                    <a target="_blank" href="https://github.com/The-Programmer-A"><i class="fa fa-3x fa-github"></i></a>
-                    <li></li>
-                    <a target="_blank" href="https://www.linkedin.com/in/armaan-chandra-44227b18a/"><i class="fa fa-3x fa-linkedin"></i></a>
-                    <li></li>
-                    <a href="https://drive.google.com/uc?export=download&id=12S8RqkBlKtZdRQc4A2PivPU8liGpIK4i" download="Armaan_Chandra_CV"><i class="fa fa-3x fa-file"></i></a>
-                    <li></li>
-                </ul>
+                <h5>About Me!<br></br></h5>
+                <p>This is about me...</p>
             </Container>
         </Jumbo>
         {/* </div> */}
