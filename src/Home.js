@@ -141,6 +141,8 @@ function ControlledCarousel() {
 
   }
 
+  // THIS IS THE LINK TO ENABLE VIEWING OF SHAREABLE LINK == https://drive.google.com/uc?view&id=
+
   return (
     <Styles>
       <div className='house'>
@@ -149,14 +151,14 @@ function ControlledCarousel() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://cdn.pixabay.com/photo/2017/08/30/07/56/money-2696228_960_720.jpg"
+                src="https://drive.google.com/uc?view&id=130ykYTSmxDEwRto4SnMknbOIfiuVsPMp"
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item >
               <img
                 className="d-block w-100"
-                src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
+                src="https://drive.google.com/uc?view&id=1aG5zei50bTbW67ZYLfKy4sIH2oYtUvu7"
                 alt="Third slide"
                 height="50%"
               />
@@ -164,7 +166,7 @@ function ControlledCarousel() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg"
+                src="https://drive.google.com/uc?view&id=1On9CwpPAUAsINR2a5atIOT4v2qT_gbtf"
                 alt="Third slide"
               />
             </Carousel.Item>
