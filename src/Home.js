@@ -24,7 +24,8 @@ const Styles = styled.div`
   }
 
   .card-text {
-    width: 95%
+    width: 95%;
+    height: 100px;
   }
 
   .textContainer {
@@ -62,11 +63,12 @@ const Styles = styled.div`
     width: 10%; /*width of your image*/
     position: absolute;
     top: 0; 
+    bottom: 2px;
 }  
 
 .list {
     list-style-type: none;
-    margin-top: 5px;
+    margin-top: 20px;
     line-height: 10px
 }
 `;
@@ -184,7 +186,7 @@ function ControlledCarousel() {
           </Container>
         </div>
       </div>
-      <Card>
+      <Card border="info" style={{ width: '100%' }}> 
         <Card.Body>
           <Card.Title>My Projects</Card.Title>
           <Card.Text>
@@ -194,11 +196,11 @@ function ControlledCarousel() {
           </Card.Text>
           <Container className='links'>
           <ul className='list'>
-            <a target="_blank" href="https://github.com/The-Programmer-A"><i class="fa fa-3x fa-github"></i></a>
+            <a target="_blank" href="https://github.com/The-Programmer-A"><i class="fa fa-2x fa-github"></i></a>
             <li></li>
-            <a target="_blank" href="https://www.linkedin.com/in/armaan-chandra-44227b18a/"><i class="fa fa-3x fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/armaan-chandra-44227b18a/"><i class="fa fa-2x fa-linkedin"></i></a>
             <li></li>
-            <a href="https://drive.google.com/uc?export=download&id=12S8RqkBlKtZdRQc4A2PivPU8liGpIK4i" download="Armaan_Chandra_CV"><i class="fa fa-3x fa-file"></i></a>
+            <a href="https://drive.google.com/uc?export=download&id=12S8RqkBlKtZdRQc4A2PivPU8liGpIK4i" download="Armaan_Chandra_CV"><i class="fa fa-2x fa-file"></i></a>
             <li></li>
           </ul>
         </Container>
