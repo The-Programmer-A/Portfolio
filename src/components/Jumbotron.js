@@ -6,15 +6,6 @@ import colorArt from '../assets/color.png'
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 const Styles = styled.div`
-
-    // .footer {
-    //     position: fixed;
-        
-    //     color: white;
-    //     text-align: center;
-    //     background: url(${colorArt});
-    //     background-size: cover;
-    // }
     
     .jumbo {
         background: url(${colorArt});
@@ -78,7 +69,6 @@ const Styles = styled.div`
 
 export const Jumbotron = () => (
     <Styles>
-      {/* <div class="footer"> */}
         <Jumbo fluid={true} className="jumbo">
             <Image className='profilePicture' roundedCircle />
             <Container className='blurb'>
@@ -86,7 +76,6 @@ export const Jumbotron = () => (
                 <p>This is about me...</p>
             </Container>
         </Jumbo>
-        {/* </div> */}
     </Styles >
 )
 
