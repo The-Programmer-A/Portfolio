@@ -105,7 +105,7 @@ function ControlledCarousel() {
       var remainderC = [1, 2, 3, 4, 5, 6]
       var activeC = document.getElementById(index) //this is the one were tunring on
       const indexremove = remainderC.indexOf(index);
-      
+
       if (indexremove > -1) {
         remainderC.splice(indexremove, 1);
       }
@@ -203,22 +203,26 @@ function ControlledCarousel() {
             <h3 className='projectTitle'> My Bookstore Application </h3>
             <br></br>
             <Container id='1' >
-              <p className='textBox'>THIS IS 1</p>
+              <p className='textBox'>This is a look of the Bookstore Application I created. The purpose of this application was to learn the skills  of building secure websites and further develop my Javascript skills.
+              My Bookstore application is an ECommerce - webstie with a emphasis on user security. The emphasis of security is acheived through the handling of user input/information. Persistent data storeage is used, storing  
+              user information and sensitve user information in 2 different tables. The table storing senstive information of user passwords and payment details is salted and hashed to protext the users private infomation. The table users of store
+              user information only holds the nessacary data required to recieve a book from the site. This is video demonstrating the key features the bookstore application.</p>
             </Container>
             <Container id='2' className='toggle_container'>
-              <p className='textBox'>THIS IS 2</p>
+              <p className='textBox'>This is the screen shown to non logged in users. This is a version of the application that is only a taste of the full functionality. This gives users the ability to view the site in a limited envrionment
+              before signing up and creating account to unlock full functionality of the application.</p>
             </Container>
             <Container id='3' className='toggle_container'>
-              <p className='textBox'>THIS IS 3</p>
+              <p className='textBox'>This is a view of the create account form. Each field of this form is required to be filled out to succesfully create an account. The bottom of the form shows a password stregnth meter and a checker to ensure both the entered passwords are the same. The information obtained in these forms are securly stored in both the senstive and non-senstive persistent data storeage tables. </p>
             </Container>
             <Container id='4' className='toggle_container'>
-              <p className='textBox'> THIS IS 4</p>
+              <p className='textBox'> This is a view of the home page to a user that has access to the websites full functionality. Signed up users are able to search for books, as well as see recommended books. Books are recommended based on the books that are stored within your Cart. </p>
             </Container>
             <Container id='5' className='toggle_container'>
-              <p className='textBox'>  THIS IS 5</p>
+              <p className='textBox'>This is a view of the search page. You can see behind the popup is a list view of all the search results. Upon the user clicking on a search result, a popup is shown providing the option to add this book to your Cart or Wishlist.</p>
             </Container>
             <Container id='6' className='toggle_container'>
-              <p className='textBox'> THIS IS 6</p>
+              <p className='textBox'> This shows that after a certain period of inactivity the user is automatically logged out of the application. This is another security features of the application, ensuring to a user that their private information is valued.  </p>
             </Container>
           </Container>
         </div>

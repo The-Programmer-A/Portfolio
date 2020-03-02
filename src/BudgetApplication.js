@@ -160,7 +160,7 @@ function ControlledCarousel() {
                 className="d-block w-100"
                 src="https://drive.google.com/uc?view&id=1aG5zei50bTbW67ZYLfKy4sIH2oYtUvu7"
                 alt="Third slide"
-                height="50%"
+                height="450"
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -168,6 +168,7 @@ function ControlledCarousel() {
                 className="d-block w-100"
                 src="https://drive.google.com/uc?view&id=1On9CwpPAUAsINR2a5atIOT4v2qT_gbtf"
                 alt="Third slide"
+                height="450"
               />
             </Carousel.Item>
           </Carousel>
@@ -177,13 +178,21 @@ function ControlledCarousel() {
             <h3 className='projectTitle'> My Budgeting Application </h3>
             <br></br>
             <Container id='container1' >
-              <p className='textBox'> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+              <p className='textBox'> This is a look at the Budgeting Application I created. This application tracks a users outgoing and incoming expenses providing information of their spending habits enabling users to better manage their budgets. The purpose of building this application was to learn the fundemental skills of Javascript and HTML. 
+              <br></br>
+              <br></br> There are 3 main sections to this application, firstly, the header which shows the user the date, available funds and a clear breakdown of their income against expenses.
+              Directly below the header is the interface to enable users to intereact with the application to input their expenses and incomes. The second section is the listed breakdown of the users incomes and expenses. Each expense shows the percentage that the expense against the users income.
+              Finally the doughnut chart shown at the bottom of the page offers visualization of the users spending habits.
+              <br></br>
+              <br></br>
+              To build this application. an MVC architecture was used. This seperated all the major components of the application, abstracting the components required for calculation, display and their ability to communicate easily. Using this 
+              architecture pattern provides a simple structure enabling other programmers to easily understand the inner workings of the application therefore making it possible to be further worked on by contributors.    </p>
             </Container>
             <Container id='container2' className='toggle_container'>
-              <p className='textBox'> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsusalkdjfa;slkdjumour and the like). </p>
+              <p className='textBox'> This is a closer view of the list breakdown. Here you can see that users are able to delete unwanted or incorrect inputs from both the incomes and expenses.</p>
             </Container>
             <Container id='container3' className='toggle_container'>
-              <p className='textBox'> It is a long established fact that a reader will be distracted bfdjslfjkg lskdjf lgkem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+              <p className='textBox'> This is a closer view of the percentages shown of each expense. Users are able to obtain helpful information quickly to obtain a better understanding of their spending habits. </p>
             </Container>
           </Container>
         </div>

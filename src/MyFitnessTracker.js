@@ -11,7 +11,7 @@ const Styles = styled.div`
 
   .carouselContainer {
     width: 10px; /* you could actually just change it to 0px */
-    margin-left: -100px;
+    margin-left: 80px;
   }
 
   .card {
@@ -30,14 +30,14 @@ const Styles = styled.div`
 
   .textContainer {
     position: relative;
-    left: 75%;
+    left: 55%;
     width: 40%;
   }
 
   .carousel {
     margin-top: 25px;
     margin-bottom: 10px;
-    width: 8500%;
+    width: 3500%;
   }
 
   .carousel-indicators  {
@@ -156,7 +156,7 @@ function ControlledCarousel() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://drive.google.com/uc?view&id=1G8G0mf1jnqK4H_8DkEyRwgnbFlhcQt0p"
+                src="https://drive.google.com/uc?view&id=1ajQcqJDzdPVGqplagQsef5vMFWqyi90g"
                 alt="First slide"
               />
             </Carousel.Item>
@@ -224,31 +224,34 @@ function ControlledCarousel() {
             <h3 className='projectTitle'> My Fitness Tracker Application </h3>
             <br></br>
             <Container id='1' >
-              <p className='textBox'>THIS IS 1</p>
+              <p className='textBox'>Here is a look at the Fitness Tracker Application I created. This application is a mobile application that is built using the Ionic Framework. The purpose of this application was to learn the fundemental skills of andriod app development. This was achieved through the 
+              creation of a Fitness Tracker Application. Users are able to easily record their day to day workouts with the use of this application. This enables users to view history of their workouts therefore can continue to improve their results in their training. Shown here is the register page of the 
+              application. Users must register in order for the use of persistent data storage.</p>
             </Container>
             <Container id='2' className='toggle_container'>
-              <p className='textBox'>THIS IS 2</p>
+              <p className='textBox'>After a user has sucessfully registered an account they are able to login.</p>
             </Container>
             <Container id='3' className='toggle_container'>
-              <p className='textBox'>THIS IS 3</p>
+              <p className='textBox'>This is a view of the home screen of the application. The open canvas acts as a overview page showing the results of current days workout history. From this page a user can move into the
+              calendar history page, or being to record a new workout for the day.</p>
             </Container>
             <Container id='4' className='toggle_container'>
-              <p className='textBox'> THIS IS 4</p>
+              <p className='textBox'> This is a view of the calendar history page. In this page, users are able to set reminders and dates of their workout plan in advance, or view their previous workouts from earlier in time.</p>
             </Container>
             <Container id='5' className='toggle_container'>
-              <p className='textBox'>  THIS IS 5</p>
+              <p className='textBox'>  This is the first page of the record new workout functionality. The interface is clean, simple and intuitive. A user simply selects the muscle group they are working on and is moved to the screen.</p>
             </Container>
             <Container id='6' className='toggle_container'>
-              <p className='textBox'> THIS IS 6</p>
+              <p className='textBox'> Next a user is able to select a spesific exercise for the muscle group selected in the previous section. By default there are a few exercise options available for each muscle group, however, users are able to add their own exercises which are then stored for the next time they use the application.</p>
             </Container>
             <Container id='7' className='toggle_container'>
-              <p className='textBox'> THIS IS 7</p>
+              <p className='textBox'> This screen shows the recording of the exercise. The information entered here is stored and used as history within the home screen overview and in the calendar page</p>
             </Container>
             <Container id='8' className='toggle_container'>
-              <p className='textBox'> THIS IS 8</p>
+              <p className='textBox'> Users are able to access an page they required through the use of the slide menu. This makes navigation through the application direct and more efficent and repeatedly clicking the back button.</p>
             </Container>
             <Container id='9' className='toggle_container'>
-              <p className='textBox'> THIS IS 9</p>
+              <p className='textBox'> This is a updated view of the home screen after a user has entered some workout information for the current day. Each set of the days exercises is shown within this overview enabling users to easily see their progress against a previous point in time.</p>
             </Container>
           </Container>
         </div>
