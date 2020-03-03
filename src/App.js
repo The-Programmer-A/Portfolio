@@ -27,7 +27,7 @@ function App() {
         <Layout>
           <Router>
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={MyBookStore} />
               <Route path="/budget" component={BudgetApplication} />
               <Route path="/bookstore" component={MyBookStore} />
               <Route path="/fitnesstracker" component={MyFitnessTracker} />
