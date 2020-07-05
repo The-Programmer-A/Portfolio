@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Home } from "./Home";
-import { BudgetApplication } from "./BudgetApplication";
-import { MyBookStore } from "./MyBookStore";
-import { MyFitnessTracker } from "./MyFitnessTracker";
-import { NoMatch } from "./NoMatch";
+import { BudgetApplication } from "./Pages/BudgetApplication";
+import { MyBookStore } from "./Pages/MyBookStore";
+import { MyFitnessTracker } from "./Pages/MyFitnessTracker";
+import { Eldercare } from "./Pages/Eldercare";
+import { NoMatch } from "./Pages/NoMatch";
 import { Layout } from "./components/Layout";
 import { NavigationBar } from "./components/NavigationBar";
 import styled from 'styled-components';
@@ -16,8 +16,6 @@ const Styles = styled.div`
     max-height:100%;
   }
 `;
-
-
 
 function App() {
   return (
@@ -31,6 +29,7 @@ function App() {
               <Route path="/budget" component={BudgetApplication} />
               <Route path="/bookstore" component={MyBookStore} />
               <Route path="/fitnesstracker" component={MyFitnessTracker} />
+              <Route path="/eldercare" component={Eldercare} />
               <Route component={NoMatch} />
             </Switch>
           </Router>

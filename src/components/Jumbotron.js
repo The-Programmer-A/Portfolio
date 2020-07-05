@@ -2,16 +2,17 @@ import React from 'react';
 import { Jumbotron as Jumbo, Container, Image } from 'react-bootstrap';
 import styled from 'styled-components';
 import moneyImage from '../assets/money.jpeg' //note this a dog - change this to your headshot
-import colorArt from '../assets/color1.png'
+import colorArt from '../assets/color2.jpg'
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 const Styles = styled.div`
     
     .jumbo {
         background: url(${colorArt});
+        background-color: #bcd4e6;
         background-size: cover;
-        text-shadow: black 0.1em 0.1em 0.1em;
-        color: #efefef;
+        //text-shadow: black 0.1em 0.1em 0.1em;
+        color: #ffffff;
         height: 200px;
         position: relative;
         left: 0;
