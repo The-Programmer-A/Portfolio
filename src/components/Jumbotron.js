@@ -74,10 +74,10 @@ export const Jumbotron = () => (
             <Image className='profilePicture' roundedCircle />
             <Container className='blurb'>
                 <h5>About Me!<br></br></h5>
-                <p>Hi im Armaan Chandra. I am currently in my post graduate honors years of Software Engineering at Victoria University of Wellington. My studies and work are a big interest and passion of mine and do take up a lot of time in my life.
-                    However, I manage to balance my degree and work with other interests of mine. In my spare time I live an active lifestyle, enjoying phyical activities such as football and weight-lifting. Sports is where I gained an understanding of the importance of 
-                    keeping company with like minded people and the strength in working with others towards a common goal so I try to keep sports within my life. Furthermore, I enjoy learning new skills and concepts that can help me think differently and strive in the world today. This interest is
-                    fueled through reading.  </p>
+                <p>Hi im Armaan Chandra. I am currently in my honors years of Software Engineering at Victoria University of Wellington. My studies in software and technologies are a big interest and passion of mine and do take up a lot of time in my life.
+                    However, I manage to balance my degree and work with other interests of mine. In my spare time I live an active lifestyle, enjoying phyical activities such as football and running. Sports is where I gained an understanding in the importance of 
+                    keeping company with like minded people and the strength in working with others towards a common goal. Furthermore, I enjoy learning new skills and concepts that challenge me and make me think differently. This interest is
+                    fueled personal studies of different topics both related and unrealted to Engineering.  </p>
             </Container>
         </Jumbo>
     </Styles >
