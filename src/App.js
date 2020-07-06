@@ -10,19 +10,14 @@ import { NavigationBar } from "./components/NavigationBar";
 import styled from 'styled-components';
 import { Jumbotron } from "./components/Jumbotron";
 
+
 const Styles = styled.div`
-  .topContainer{
-    max-width:100%;
-    max-height:100%;
-  }
 `;
 
 function App() {
   return (
     <Styles>
-      <div className='topContainer'>
         <NavigationBar />
-        <Layout>
           <Router>
             <Switch>
               <Route exact path="/" component={MyBookStore} />
@@ -33,10 +28,7 @@ function App() {
               <Route component={NoMatch} />
             </Switch>
           </Router>
-        </Layout>
         <Jumbotron />
-      </div>
-    
     </Styles>
   );
 }
